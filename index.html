@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adam's Adventure</title>
+  <style>
+
+header {
+margin-top:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2c39;
+border: solid 2px #111;
+border-radius:1rem;
+padding: 0 0 1em 0;
+width:50%;
+
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.header-button {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #2f4255;
+  color:#eeeedb;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-button:hover {
+  background-color: #395067;
+}
+
+
+body {
+background-color:#18222c; 
+color:#eeeedb;
+}
+
+body, main {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+margin-top:2rem;
+padding-top:2rem;
+border: solid 2px #111;
+border-radius:1rem;
+background-color: #1f2c39;
+width:50%;
+
+}
+    section {
+padding: 0 2rem 0 2rem;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+    }
+    img {
+      margin-right: 1em;
+      height: 225px;
+width:400px;
+border: solid 2px #111;
+border-radius:1rem;
+    }
+footer {
+margin-top:38rem;
+}
+  </style>
+</head>
+<body>
+ <header>
+  <h1>Adam's Adventure</h1>
+  <nav>
+    <a href="#forest" class="header-button">Forest</a>
+    <a href="#cave" class="header-button">Cave</a>
+    <a href="#portal" class="header-button">Portal</a>
+    <a href="#alien-world" class="header-button">Alien World</a>
+  </nav>
+</header>
+
+  <main>
+    <section id='forest'>
+      <img src="forest.png" alt="Adam in the forest">
+      <div>
+        <h2>Forest</h2>
+        <p>Adam walks through the forest, his footsteps rustling the leaves underfoot. He hears a nearby stream babbling and decides to follow it. As he walks, he can feel a strange pull towards a nearby cave, as if something is calling to him from within.</p>
+      </div>
+    </section>
+    <section id='cave'>
+      <img src="cave.png" alt="Adam peering into the cave">
+      <div>
+        <h2>Cave</h2>
+        <p>As he approaches the cave, Adam notices that the entrance is partially hidden behind a thicket of bushes. He carefully pushes the branches aside and peers into the darkness of the cave. It's then that he sees it - a faint glow emanating from deep within the cave. Curiosity gets the better of Adam, and he takes a few cautious steps into the cave.</p>
+      </div>
+    </section>
+    <section id='portal'>
+      <img src="portal.png" alt="Adam stepping through the portal">
+      <div>
+        <h2>Portal</h2>
+        <p>As he moves deeper into the darkness, the glow becomes brighter and brighter, until he can see a strange portal shimmering before him. Without thinking, he steps through the portal and feels a sudden rush of energy.</p>
+      </div>
+    </section>
+    <section id='alien-world'>
+      <img src="alien_world.png" alt="Adam on the alien world">
+      <div>
+        <h2>Alien World</h2>
+        <p>As he emerges from the other side, Adam finds himself on a strange, alien world. As Adam takes in his surroundings, he realizes that he's not on Earth anymore. The landscape is filled with strange, towering structures and vehicles that move silently through the air. In the distance, he can see a sprawling metropolis that seems to stretch to the horizon.</p>
+      </div>
+    </section>
+  </main>
+<footer>
+<a href='#' class='header-button'>Back to top</a>
+</footer>
+</body>
+<script>
+/*
+  const buttons = document.querySelectorAll('.header-button');
+  buttons.forEach(button => {
+    button.addEventListener('mouseover', function() {
+      setTimeout(() => {
+      button.click();
+    }, 2000);
+    });
+  });
+*/
+</script>
+</html>
