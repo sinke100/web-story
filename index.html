@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam's Adventure</title>
-  <link rel="icon" type="image/png" href="favicon.png">
   <style>
 
 header {
@@ -65,6 +66,7 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+flex-wrap: wrap;
 }
 main {
 margin-top:2rem;
@@ -81,13 +83,25 @@ padding: 0 2rem 0 2rem;
       flex-direction: row;
       margin-bottom: 2em;
     }
-    img {
-      margin-right: 1em;
-      height: 225px;
-width:400px;
-border: solid 2px #111;
-border-radius:1rem;
-    }
+    
+img {
+margin-right: 1em;
+  height: 60%;
+  max-width: 60%;
+  border: solid 2px #111;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1080px) {
+  img {
+    margin-right: 1em;
+    height: 225px;
+    width: 400px;
+  }
+}
+
+
+
 footer {
 margin-top:38rem;
 }
